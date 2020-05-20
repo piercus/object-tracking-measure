@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/piercus/object-tracking-measure.svg?branch=master)](https://travis-ci.org/piercus/object-tracking-measure)
+
 ## Object Tracking measure
 
 This project aims to calculate metrics for tracking algorithm
@@ -6,7 +8,7 @@ This project aims to calculate metrics for tracking algorithm
 
 See [[1]](#1).
 
-```
+```js
 const otm = require('object-tracking-measure');
 
 const groundTruths = [
@@ -49,7 +51,7 @@ otm.mota({
 
 See [[2]](#2).
 
-```
+```js
 const otm = require('object-tracking-measure');
 
 const groundTruths = [
