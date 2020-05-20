@@ -2,7 +2,7 @@
 
 ## Object Tracking measure
 
-This project aims to calculate metrics for tracking algorithm
+This project aims to calculate metrics for tracking algorithm (especially MOTA, IDF1)
 
 ### MOTA
 
