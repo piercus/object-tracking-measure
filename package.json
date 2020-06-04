@@ -15,7 +15,7 @@
     "url": "git+https://github.com/piercus/object-tracking-measure.git"
   },
   "xo": {
-    "rules":{
+    "rules": {
       "unicorn/no-fn-reference-in-iterator": 0
     }
   },
