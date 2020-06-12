@@ -44,3 +44,8 @@ test('idf1 on real-life example', t => {
 	const result = otm.idf1(options);
 	t.true(Math.abs(result - 1) > 1e-6);
 });
+test('idf1 on real-life example 2', t => {
+	const options = JSON.parse(fs.readFileSync('./tests/data/real-life2.json').toString());
+	const result = otm.idf1(options);
+	t.true(Math.abs(result - 1) > 1e-6);
+});
