@@ -1,4 +1,5 @@
 const otm = require('..');
+const fs = require('fs');
 const test = require('ava');
 const groundTruths = [
 	[
@@ -30,10 +31,16 @@ const predictions = [
 	]
 ];
 
-test('mota on simple example', t => {
+test('idf1 on simple example', t => {
 	const result = otm.idf1({
 		groundTruths,
 		predictions
 	});
 	t.true(Math.abs(result - 1) < 1e-6);
+});
+
+test('idf1 on real-life example', t => {
+	const options = JSON.parse(fs.readFileSync('./tests/data/real-life.json').toString());
+	const result = otm.idf1(options);
+	t.true(Math.abs(result - 1) > 1e-6);
 });

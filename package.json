@@ -1,6 +1,6 @@
 {
   "name": "object-tracking-measure",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Implementation of object tracking measure in javascript (MOTA, IDF1 ...)",
   "main": "index.js",
   "directories": {
