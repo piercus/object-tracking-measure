@@ -93,7 +93,7 @@ otm.idf1({
 ### Advanced usage
 
 By default, object-tracking-measure uses 
-* distance between boxes is (1 - Intersection Over Union) (using (mean-average-precision)[https://www.npmjs.com/package/mean-average-precision] library)
+* distance between boxes is (1 - Intersection Over Union) (using [mean-average-precision](https://www.npmjs.com/package/mean-average-precision) library)
 * threshold is 1 (i.e. IOU = 0  - no overlap)
 
 You can cutomize this, for example to track distance between {x,y} points like
