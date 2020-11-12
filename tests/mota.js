@@ -39,10 +39,9 @@ test('mota on simple example', t => {
 	t.true(Math.abs(result - 0.7142857142857143) < 1e-6);
 });
 test('mota on real life', t => {
-
-	const data = require('./data/real-life5.json')
+	const data = require('./data/real-life5.json');
 	data.logger = console;
 	const result = otm.mota(data);
-	console.log(result)
+	console.log(result);
 	t.true(result > 0);
 });
