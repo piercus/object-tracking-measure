@@ -40,8 +40,6 @@ test('mota on simple example', t => {
 });
 test('mota on real life', t => {
 	const data = require('./data/real-life5.json'); // eslint-disable-line ava/no-import-test-files
-	data.logger = console;
 	const result = otm.mota(data);
-	console.log(result);
-	t.true(result > 0);
+	t.true(result < 0);
 });
