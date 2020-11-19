@@ -38,3 +38,8 @@ test('mota on simple example', t => {
 
 	t.true(Math.abs(result - 0.7142857142857143) < 1e-6);
 });
+test('mota on real life', t => {
+	const data = require('./data/real-life5.json'); // eslint-disable-line ava/no-import-test-files
+	const result = otm.mota(data);
+	t.true(result < 0);
+});
