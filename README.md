@@ -138,6 +138,46 @@ otm.idf1({
 	threshold: 2 // means that 2 meters far is too far
 });
 ```
+## Inspect ID Metric
+```js
+const measure = otm.idDetails({
+	groundTruths,
+	predictions
+});
+
+console.log(otm.idInspect(Object.assign({}, measure, {
+	columns: process.stdout.columns - 20
+})))
+```
+will print
+```bash
+--
+GroundTruth[0]✓――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――✓
+Prediction[0] ✓――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――✓
+              |----------------------------|----------------------------|---------------------------
+              0                            1                            2                           
+
+--
+GroundTruth[1]✓―――――――――――――――――――――――――――✓?―――――――――――――――――――――――――――?✓――――――――――――――――――――――――――✓
+Prediction[1] ✓―――――――――――――――――――――――――――✓?―――――――――――――――――――――――――――?✓――――――――――――――――――――――――――✓
+              |----------------------------|----------------------------|---------------------------
+```
+## Inspect MOT Metric
+```js
+const measure = otm.motDetails({
+	groundTruths,
+	predictions
+});
+
+console.log(otm.motInspect(Object.assign({}, measure, {
+	columns: process.stdout.columns - 20
+})))
+```
+will print
+```bash
+0[0]                1-1-1-1-1-1-1-1-1-1-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-
+1[1]                0-0-0-0-0-0-0-0-0-0---------------------1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-
+```
 ## References
 <a id="1">[1]</a> 
 Keni Bernardin and Rainer Stiefelhagen (2008). 
