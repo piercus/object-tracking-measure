@@ -16,7 +16,8 @@
   },
   "xo": {
     "rules": {
-      "unicorn/no-fn-reference-in-iterator": 0
+      "unicorn/no-fn-reference-in-iterator": 0,
+      "no-restricted-modules":0
     }
   },
   "keywords": [
@@ -53,6 +54,7 @@
     "xo": "^0.30.0"
   },
   "dependencies": {
+    "colors": "^1.4.0",
     "mean-average-precision": "^1.5.0",
     "munkres-js": "^1.2.2"
   }
