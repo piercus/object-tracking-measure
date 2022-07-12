@@ -1,9 +1,7 @@
 const otm = require('..');
 const test = require('ava');
 const groundTruths = [
-
-	[0, 1, 2, 3, 4] // X, y, w, h
-
+	[0, 1, 2, 3, 4]
 ];
 
 const predictions = [
