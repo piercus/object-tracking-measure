@@ -18,5 +18,5 @@ test('idf1 for #28', t => {
 		distFn: (a, b) => Math.abs(a - b),
 		threshold: 0.5
 	});
-	t.pass();
+	t.true(result > 0);
 });
