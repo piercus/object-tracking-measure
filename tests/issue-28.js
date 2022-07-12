@@ -5,7 +5,7 @@ const groundTruths = [
 ];
 
 const predictions = [
-	[4, 3, 2, 1, 0], // X, y, w, h
+	[4, 3, 2, 1, 0],
 	[null, 0, 2, null, 0]
 ];
 
