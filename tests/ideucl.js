@@ -164,13 +164,13 @@ const predictionsA = [
 ];
 
 test('idf1 on track A', t => {
-	const result = otm.idf1({
+	const result = otm.ideucl({
 		groundTruths,
 		predictions: predictionsA,
 		distFn: (a, b) => Math.abs(a - b),
 		threshold: 0.5
 	});
-	t.true(Math.abs(result - 0.5) < 1e-1);
+	t.true(Math.abs(result - 0.37) < 1e-1);
 });
 
 // Example 2 idf1 = 0.5 and ideucl = 0.67
@@ -303,11 +303,11 @@ const predictionsB = [
 ];
 
 test('idf1 on track B', t => {
-	const result = otm.idf1({
+	const result = otm.ideucl({
 		groundTruths,
 		predictions: predictionsB,
 		distFn: (a, b) => Math.abs(a - b),
 		threshold: 0.5
 	});
-	t.true(Math.abs(result - 0.5) < 1e-1);
+	t.true(Math.abs(result - 0.67) < 1e-1);
 });

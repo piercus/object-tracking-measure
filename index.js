@@ -6,5 +6,6 @@ module.exports = {
 	idTrackDist: require('./lib/id/track-dist'),
 	idf1: require('./lib/id/idf1'),
 	idInspect: require('./lib/id/inspect/inspect.js'),
-	motInspect: require('./lib/mot/inspect/inspect.js')
+	motInspect: require('./lib/mot/inspect/inspect.js'),
+	ideucl : require('./lib/idcl/ideucl')
 };
