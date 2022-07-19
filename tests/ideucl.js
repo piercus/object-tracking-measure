@@ -309,5 +309,5 @@ test('idf1 on track B', t => {
 		distFn: (a, b) => Math.abs(a - b),
 		threshold: 0.5
 	});
-	t.true(Math.abs(result - 0.67) < 1e-1);
+	t.true(Math.abs(result - 0.62) < 1e-1);
 });
