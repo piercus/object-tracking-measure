@@ -163,8 +163,8 @@ const predictionsA = [
 		600]
 ];
 
-test('idf1 on track A', t => {
-	const result = otm.ideucl({
+test('idEucl on track A', t => {
+	const result = otm.idEucl({
 		groundTruths,
 		predictions: predictionsA,
 		distFn: (a, b) => Math.abs(a - b),
@@ -302,8 +302,8 @@ const predictionsB = [
 		600]
 ];
 
-test('idf1 on track B', t => {
-	const result = otm.ideucl({
+test('idEucl on track B', t => {
+	const result = otm.idEucl({
 		groundTruths,
 		predictions: predictionsB,
 		distFn: (a, b) => Math.abs(a - b),

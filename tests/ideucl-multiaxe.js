@@ -30,8 +30,8 @@ const predictions = [
 	]
 ];
 
-test('ideucl on simple example', t => {
-	const result = otm.ideucl({
+test('idEucl on simple example', t => {
+	const result = otm.idEucl({
 		groundTruths,
 		predictions
 	});

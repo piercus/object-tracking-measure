@@ -7,7 +7,7 @@ module.exports = {
 	idf1: require('./lib/id/idf1'),
 	idInspect: require('./lib/id/inspect/inspect.js'),
 	motInspect: require('./lib/mot/inspect/inspect.js'),
-	ideucl: require('./lib/idcl/ideucl'),
-	ideuclDetails: require('./lib/idcl/ideucl-details'),
-	ideuclInspect: require('./lib/idcl/inspect/inspect.js')
+	idEucl: require('./lib/idcl/ideucl'),
+	idEuclDetails: require('./lib/idcl/ideucl-details'),
+	idEuclInspect: require('./lib/idcl/inspect/inspect.js')
 };
