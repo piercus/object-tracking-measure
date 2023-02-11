@@ -49,9 +49,9 @@
   },
   "homepage": "https://github.com/piercus/object-tracking-measure#readme",
   "devDependencies": {
-    "ava": "^3.8.2",
+    "ava": "^5.2.0",
     "semantic-release": "^19.0.3",
-    "xo": "^0.30.0"
+    "xo": "^0.53.1"
   },
   "dependencies": {
     "colors": "^1.4.0",
