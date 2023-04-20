@@ -178,6 +178,60 @@ will print
 0[0]                1-1-1-1-1-1-1-1-1-1-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-
 1[1]                0-0-0-0-0-0-0-0-0-0---------------------1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-
 ```
+
+## Other tools
+
+### getStats
+
+```js
+const result = otm.getStats({
+	track: [
+		[22, 33, 20, 20], // X, y, w, h
+		null,
+		[25, 35, 20, 20],
+		[39, 41, 20, 20],
+		null
+	]
+});
+
+/* 
+{
+	count: 3, // number of non-null point)
+	iterationAge: 1, // number of null at the end
+	fullDensity: 0.6, // non-null /total size of track
+	gapDensity: 0.3333333333333333, // number of gaps / number of non-null
+	density: 0.75, // non-null / size of the trimed track
+	firstIndex: 0, // first index of the trimed track
+	lastIndex: 3 // last index of the trimed track
+}
+*/
+ 
+```
+
+### fastGetNullSegment
+
+```js
+const result = otm.fastGetNullSegment({
+	track: [
+		[22, 33, 20, 20], // X, y, w, h
+		null,
+		null,
+		null,
+		[25, 35, 20, 20],
+		[39, 41, 20, 20],
+		null
+	]
+});
+
+/* 
+{
+	first: 1,
+	last: 5,
+	type: 'null',
+}
+*/
+ 
+```
 ## References
 <a id="1">[1]</a> 
 Keni Bernardin and Rainer Stiefelhagen (2008). 
