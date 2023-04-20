@@ -50,7 +50,7 @@
   "homepage": "https://github.com/piercus/object-tracking-measure#readme",
   "devDependencies": {
     "ava": "^3.8.2",
-    "semantic-release": "^17.0.7",
+    "semantic-release": "^19.0.3",
     "xo": "^0.30.0"
   },
   "dependencies": {
