@@ -31,10 +31,10 @@ const predictions = [
 	],
 ];
 
-test('motp on simple example', t => {
-	const result = otm.motp({
+test('idEucl on simple example', t => {
+	const result = otm.idEucl({
 		groundTruths,
 		predictions,
 	});
-	t.true(Math.abs(result - 0.225_907_357_201_818_7) < 1e-6);
+	t.true(result === 1);
 });

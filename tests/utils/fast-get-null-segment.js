@@ -1,5 +1,6 @@
-const otm = require('../..');
 const test = require('ava');
+const otm = require('../..');
+
 const groundTruthTrack = [
 	[22, 33, 20, 20], // X, y, w, h
 	null,
@@ -7,13 +8,13 @@ const groundTruthTrack = [
 	null,
 	[25, 35, 20, 20],
 	[39, 41, 20, 20],
-	null
+	null,
 ];
 
 test('fastGetNullSegment on simple example', t => {
 	const result = otm.fastGetNullSegment({
 		track: groundTruthTrack,
-		iteration: 2
+		iteration: 2,
 	});
 	t.is(result.first, 1);
 	t.is(result.last, 4);

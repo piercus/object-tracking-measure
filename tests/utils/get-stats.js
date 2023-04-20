@@ -1,16 +1,17 @@
-const otm = require('../..');
 const test = require('ava');
+const otm = require('../..');
+
 const groundTruthTrack = [
 	[22, 33, 20, 20], // X, y, w, h
 	null,
 	[25, 35, 20, 20],
 	[39, 41, 20, 20],
-	null
+	null,
 ];
 
 test('getStats on simple example', t => {
 	const result = otm.getStats({
-		track: groundTruthTrack
+		track: groundTruthTrack,
 	});
 	const {count, age, fullDensity, gapDensity, firstIndex, lastIndex} = result;
 	t.is(count, 3);
