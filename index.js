@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = Object.assign({
 	mota: require('./lib/mot/mota'),
 	motp: require('./lib/mot/motp'),
 	motDetails: require('./lib/mot/mot-details'),
@@ -10,4 +10,4 @@ module.exports = {
 	idEucl: require('./lib/idcl/ideucl'),
 	idEuclDetails: require('./lib/idcl/ideucl-details'),
 	idEuclInspect: require('./lib/idcl/inspect/inspect.js')
-};
+}, require('./lib/utils'));
