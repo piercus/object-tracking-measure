@@ -9,5 +9,5 @@ module.exports = Object.assign({
 	motInspect: require('./lib/mot/inspect/inspect.js'),
 	idEucl: require('./lib/idcl/ideucl'),
 	idEuclDetails: require('./lib/idcl/ideucl-details'),
-	idEuclInspect: require('./lib/idcl/inspect/inspect.js')
+	idEuclInspect: require('./lib/idcl/inspect/inspect.js'),
 }, require('./lib/utils'));
